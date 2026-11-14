@@ -26,12 +26,15 @@ Qandak2 is a small, Windows-friendly helper project for collecting audio posts f
 
 - Repository connection verified.
 - Read and write access verified.
-- Implementation not started.
-- Next decision: determine whether the source channel is public or private and whether the user controls it.
+- Source channel confirmed public: `@deklamehayeali`.
+- First test post selected: `https://t.me/deklamehayeali/158`.
+- Initial single-post downloader added. It uses a user-authorized Telethon session so it can request a specific older channel post.
+- Credentials and session files are excluded from Git.
+- Download has not yet been run: the user must provide their own Telegram API ID/hash locally and complete Telegram login.
 
 ## Planned milestones
 
-- M1: Confirm Telegram channel access method.
-- M2: Build a minimal audio-post downloader.
+- M1: Public channel and first test post confirmed.
+- M2: Run the downloader against post 158 and verify the downloaded media.
 - M3: Add a simple Windows interface and local configuration.
-- M4: Test with a small number of audio posts.
+- M4: Test a small batch and prepare selected audio for ChatGPT upload.
